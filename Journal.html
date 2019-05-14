@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Journal</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.fullpage.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+
+    <style>
+
+        /* Style for our header texts
+        * --------------------------------------- */
+        h1 {
+            font-size: 5em;
+            font-family: arial,helvetica;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro p {
+            color: #fff;
+        }
+
+        /* Centered texts in each section
+        * --------------------------------------- */
+        .section {
+            text-align: center;
+        }
+
+        /* Fixed header
+        * --------------------------------------- */
+        #header {
+            position: fixed;
+            height: 60px;
+            display: block;
+            width: 100%;
+            z-index: 9;
+            <!-- Padding for iGEM bar at top of page--> padding: 0px 0 0 0;
+        }
+
+        #header {
+            top: 0px;
+        }
+    </style>
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="examples.js"></script>
+
+    <script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['Project', 'Software', 'Human Practices', 'Contact Us'],
+				sectionsColor: ['#F53240', '#F9BE02', '#02C8A7', '#AF7AC5'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Project','Software','Human Practices', 'Contact Us'],
+				css3: true,
+				responsiveWidth: 750,
+				responsiveHeight: 400,
+				loopTop: true,
+				loopBottom: true,
+				afterResponsive: function(isResponsive){}
+			});
+		});
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="iGEMWikiHome.html">iGEM UofC 2019</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Project<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ChloroPhobic.html">ChloroPhobic</a></li>
+                                <li><a href="Modelling.html">Modelling</a></li>
+                                <li><a href="End_to_End.html">End to End</a></li>
+                                <li class="divider"></li>
+                                <li><a href="NLP.html">NLP</a></li>
+                                <li class="divider"></li>
+                                <li><a href="Automation.html">Automation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Software.html">Software</a></li>
+                        <li><a href="HumanPractices.html">Human Practices</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Journal<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="WetLabJournal.html">Wet Lab</a></li>
+                                <li><a href="DryLabJournal.html">Dry Lab</a></li>
+                                <li><a href="HumanPracticesJournal.html">Human Practices</a></li>
+                                <li><a href="EducationJournal.html">Education</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <div class="intro">
+                <h1>Wet Lab</h1>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Dry Lab</h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Human Practices</h1>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Education</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
