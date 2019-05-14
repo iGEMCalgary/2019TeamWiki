@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+body
+{
+	padding-top: 36px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.container-fluid {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+@media (min-width: 980px)
+{
+	body
+	{
+		padding-top: 36px;
+		font-family: 'PT Sans', sans-serif;
+	}
+}
+
+.img1
+{
+	max-width:30%;
+	height:auto;
+	vertical-align:middle;
+}
+
+.img2
+{
+  max-width:100%;
+	height: auto;
+}
+.imgSocialMedia
+{
+	max-width: 50%;
+	max-height: 30%;
+}
+.row
+{
+		float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.row.r1
+{
+	background-color: #CAEBF2;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+.row.r2
+{
+	background-color: #7cdbd5;
+	padding-top:5;
+	padding-bottom:5;
+	padding-left:5;
+	padding-right:5;
+}
+.row.footer
+{
+	background-image: url("triFront.png");
+	background-color: #F53240;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-top: 35px;
+	background-size: 100% auto;
+	/**/vertical-align: middle;
+}
+.container-fluid .container1
+{
+	height: 1000px;
+}
+
+#myBtn
+{
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+	background-color: transparent;
+}
+
+#myBtn:hover
+{
+	background-image: url('topclick.png');
+}
+
+/* ERIKA DONT TOUCH!!!!!!!!!!!!!!!!!! OR I KILL YOU
+
+@media (-moz-touch-enabled: 1), (pointer:coarse) {
+    .something {
+        its: working;
+    }
+}*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+	.container-fluid {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.img1
+	{
+		max-width:20%;
+		height:auto;
+		vertical-align:middle;
+	}
+	.imgSocialMedia
+	{
+		max-width: 70%;
+		max-height: 50%;
+
+	}
+	.row.r1
+	{
+		background-color: #CAEBF2;
+		padding-top: 5%;
+		padding-bottom: 5%;
+
+		text-align: center;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {} */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px)
+{
+
+	.imgSocialMedia
+	{
+		max-width: 50%;
+		max-height: 50%;
+	}
+
+	.row.footer
+	{
+		background-image: url("triFront.png");
+		background-color: #F53240;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: 100% auto;
+		/**/vertical-align: middle;
+
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>iGEM University of Calgary 2019</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.fullpage.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Fixed header
+	* --------------------------------------- */
+	#header{
+		position:fixed;
+		height: 60px;
+		display:block;
+		width: 100%;
+		z-index:9;
+		<!--Padding for iGEM bar at top of page-->
+		padding: 0px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['Project', 'Software', 'Human Practices', 'Contact Us'],
+				sectionsColor: ['#F53240', '#F9BE02', '#02C8A7', '#AF7AC5'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Project','Software','Human Practices', 'Contact Us'],
+				css3: true,
+				responsiveWidth: 750,
+				responsiveHeight: 400,
+				loopTop: true,
+				loopBottom: true,
+				afterResponsive: function(isResponsive){}
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+<div id="header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">iGEM UofC 2019</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Project<b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Proj1</a></li>
+				<li><a href="#">Proj2</a></li>
+				<li><a href="#">Proj3</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Proj4</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Proj5</a></li>
+			  </ul>
+        </li>
+		<li><a href="#">Software</a></li>
+        <li><a href="#">Human Practices</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Project</h1>
+			<p>Blah, blah, blah, this is our project. Yikes.</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Software</h1>
+				<p>
+					We made a bot. It does some cool stuff.
+				</p>
+			</div>
+		</div>
+
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Human Practices</h1>
+			<p>Humans were involved in the creation of this project.</p>
+		</div>
+	</div>
+    <div class="section" id="section3">
+        <div>
+            <h1>Contact Us</h1>
+        </div>
+        <div id="social-media">
+            <ul id="social-media-list">
+                <li><a href="#"><i class="fa fa-facebook-f fa-2x" aria-hidden="true"></i><span>Facebook</span></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i><span>Twitter</span></a></li>
+                <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><span>Instagram</span></a></li>
+                <li><a href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span>Email</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>iGEM University of Calgary 2018</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="navBar.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="navBar.css" />
+	<style>
+
+
+	/* Fixed header
+	* --------------------------------------- */
+	#header{
+		position:fixed;
+		height: 60px;
+		display:block;
+		width: 100%;
+		z-index:9;
+		<!--Padding for iGEM bar at top of page-->
+		padding: 0px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['Projects', 'Software', 'Human Practices'],
+				sectionsColor: ['#F53240', '#F9BE02', '#02C8A7'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Project','Software','Human Practices'],
+				css3: true,
+				responsiveWidth: 750,
+				responsiveHeight: 400,
+				loopTop: true,
+				loopBottom: true,
+				afterResponsive: function(isResponsive){}
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">iGEM UofC 2018</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Project
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Overview</a>
+			  <a class="dropdown-item" href="#">Info 1</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Info 2</a>
+			</div>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Software</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Human Practices</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Team</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+
+</body>
+</html>
