@@ -1,0 +1,178 @@
+﻿.journal {
+    text-align: center;
+    padding-top: 50px;
+}
+.journalMonths {
+    font-size: 25px;
+}
+.button1 {
+    
+}
+
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+    .active, .collapsible:hover {
+        background-color: #CFCF00;
+        color: white;
+    }
+
+    .collapsible:after {
+        content: '\002B';
+        color: lightgray;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size: 25px;
+    }
+
+.active:after {
+    content: "\2212";
+    color: darkgray;
+}
+
+.collapsibleContent {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    text-align: left;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+    .navbar a {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .navbar a:hover {
+            background-color: #CFCF00;
+        }
+
+.active {
+    background-color: #CCCC00;
+    color: white;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+/* Social Media Animation
+ * --------------------------------------- */
+@media screen and (min-width: 1024px) {
+    #social-media-list {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0;
+        padding: 0;
+    }
+
+        #social-media-list li {
+            position: relative;
+            list-style: none;
+            float: left;
+        }
+
+            #social-media-list li a {
+                width: 60px;
+                height: 60px;
+                line-height: 30px;
+                /*    text-align: center;*/
+                overflow: hidden;
+                display: block;
+                white-space: nowrap;
+                text-decoration: none;
+                transition: width 0.5s;
+                box-sizing: border-box;
+            }
+
+            #social-media-list li:hover a {
+                width: 240px;
+            }
+
+            #social-media-list li a .fa {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                box-sizing: border-box;
+                color: #fff;
+            }
+
+            #social-media-list li a span {
+                color: #fff;
+                font-size: 2em;
+                padding-left: 20px;
+            }
+}
+
+@media screen and (max-width: 1024px) {
+    #social-media-list {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0;
+        padding: 0;
+    }
+
+        #social-media-list li {
+            position: relative;
+            list-style: none;
+            /*        float: left;*/
+            text-align: left;
+        }
+
+            #social-media-list li a {
+                width: 240px;
+                height: 60px;
+                line-height: 30px;
+                /*    text-align: center;*/
+                overflow: hidden;
+                display: block;
+                white-space: nowrap;
+                text-decoration: none;
+                transition: width 0.5s;
+                box-sizing: border-box;
+            }
+
+                #social-media-list li a .fa {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    box-sizing: border-box;
+                    color: #fff;
+                }
+
+                #social-media-list li a span {
+                    color: #fff;
+                    font-size: 2em;
+                    padding-left: 20px;
+                }
+}
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
