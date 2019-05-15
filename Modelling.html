@@ -1,11 +1,166 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Modelling</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="modellingStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="collapsibleButtonStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="navBarStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="simpleMethodsStyleSheet.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
 </head>
 <body>
+    <div class="sticky">
+        <div class="navbar">
+            <a href="iGEMWikiHome.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+            <a class="active" href="#"><i class="fa fa-fw fa-star"></i> Projects</a>
+            <a href="HumanPractices.html"><i class="fa fa-fw fa-handshake"></i> Human Practices</a>
+            <a href="Journal.html"><i class="fa fa-fw fa-book"></i> Journal</a>
+            <a href="protocol.html"><i class="fa fa-fw fa-book"></i> Protocol</a>
+            <a href="#"><i class="fa fa-fw fa-users"></i> Team</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fa fa-fw fa-tasks"></i> Judging</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+    </div>
+    <div class="container-fluid">
 
+        <div class="modelling">
+            <div class="centreAligned">
+                <h3>
+                    2019 Modelling
+                </h3>
+                <hr />
+            </div>
+
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Swiss Cheese</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Homology Modelling of chlorophyll binding protein(6GIX). Quick and painless.
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">MS 389</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Gromacs modelling of the Lipid-water barrier and our 6GIX protein. Must include utilization of ARC to overcome computation and time barriers. VMD will be used to create a visualization
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Olly</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Solvent fill model from MS 389 with oleic acid as lipid for full denaturing understanding *136 oleic acid particles*; calculated using relative size to water.
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Surfer</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Bilayer system with half being Oleic acid as in Olly and the bottom being solvent to demonstrate interaction in the two layers
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Phil</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    .
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Chloro-Phil</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    .
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Crux</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    .
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Reversibility/dissociation</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    If we modeled the rate of dissociation between proteins and ligands, or model the conditions which allow dissociation then we can recycle protein - important for industrial process integration
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Protein Shake</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Genetic algorithm for possible protein changes and enhancement
+                    Will most likely be guided by the Coot and Pymol changes done by Cassie and Sarah. Will utilize ARC
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Pickles</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Modelling of Chlorophyll degradation into its derivatives. Will have to add pathways
+                    First order reaction model - baseline kinetic study to determine robustness of first order mechanism of chlorophyll degradation into pheophytin, chlorophyllide, and pheophorbide
+                    Use literature data from other degradation studies and regress data to fit parameters
+                    Model written in Matlab
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Mint</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Thermodynamic modelling of the deterioration of Chlorophyll A and B.
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">2-phase separation model</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Study on separation process unit
+                    Gravity decanters are often used to separate immiscible phases
+                    Will likely include hardware
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Integration into Canola oil production plants </div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Comparative study on a baseline canola production facility vs facility with our separation module integrated into process flow
+                    Will provide operational economic data of our separation system
+                    Reactor unit with chlorophyll degradation into pheophorbide can be included as well
+                    Will be done on Aspen HYSIS or VMG
+                </p>
+            </div>
+            <button class="button1 collapsible"><div class="collapsibleButtonTitle">Farmer Income</div></button>
+            <div class="collapsibleContent">
+                <p>
+                    Current hypothesis is that our separation system will increase the relative value of green seed oil equal or close (maybe greater with pheophorbide unit) and allow farmers to increase the price at which they sell it, raising farmer income
+                    Essentially want to study whether our project benefits canola farmers
+                    Need to talk to an economist with experience in agricultural macroeconomics
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <hr />
+        <div class="centreAligned">
+            <a href="contactUs.html"> Contact Us</a> <br />
+            <a href="#"> Visit our website containing achievements from other iGEM years</a> <br />
+        </div>
+        <div class="rightAligned">
+            <p>
+                Written by JD, 2019-05-15;
+                Last updated by: JD, 2019-05-15
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
