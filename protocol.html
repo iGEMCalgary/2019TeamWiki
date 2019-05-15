@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Protocol</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="protocolStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="collapsibleButtonStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="navBarStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="simpleMethodsStyleSheet.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    <div class="sticky">
+        <div class="navbar">
+            <a href="iGEMWikiHome.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+            <a href="#"><i class="fa fa-fw fa-star"></i> Projects</a>
+            <a href="#"><i class="fa fa-fw fa-handshake"></i> Human Practices</a>
+            <a href="Journal.html"><i class="fa fa-fw fa-book"></i> Journal</a>
+            <a class="active" href="#"><i class="fa fa-fw fa-book"></i> Protocol</a>
+            <a href="#"><i class="fa fa-fw fa-users"></i> Team</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fa fa-fw fa-tasks"></i> Judging</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="protocol">
+            <div class="centreAligned">
+                <h3>
+                    2019 Protocols
+                </h3>
+            </div>
+                <button class="button1 collapsible"><div class="collapsibleButtonTitle">Protocol 1 Wow</div></button>
+                <div class="collapsibleContent">
+                    <div class="table-responsive">
+                        <table></table>
+                    </div>
+                </div>
+                <button class="button1 collapsible"><div class="collapsibleButtonTitle">Protocol 2</div></button>
+                <div class="collapsibleContent">
+                    <p>Future</p>
+                </div>
+            </div>
+        </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <footer>
+        <div class="centreAligned">
+            <a href="contactUs.html"> Contact Us</a> <br />
+            <a href="#"> Visit our website containing achievements from other iGEM years</a> <br />
+        </div>
+        <div class="rightAligned">
+            <p>
+                Written by JD, 2019-05-14;
+                Last updated by: JD, 2019-05-15
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿.centreAligned {
+    text-align: center;
+}
+
+.rightAligned {
+    text-align: right;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
