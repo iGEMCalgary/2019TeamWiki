@@ -8,7 +8,12 @@
 .button1 {
     
 }
-
+.centreAligned {
+    text-align: center;
+}
+.rightAligned {
+    text-align: right;
+}
 .collapsible {
     background-color: white;
     color: black;
