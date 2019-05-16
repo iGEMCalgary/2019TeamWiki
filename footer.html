@@ -1,58 +1,78 @@
-<html>
+﻿<html lang="en">
 <head>
-  <title>Journal</title>
-  <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <style>
-  footer{
-    margin: auto;
-    width: 962px;
-    height: 55px;
-    background-color: #27354f;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/WikiResetCSSImposter?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/bootstrap_min_css?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/jquery_fullPage_css?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/animation_css?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/layout_cssImposter?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/animation_css?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/ProjectCSS_cssImposter?action=raw&ctype=text/css">
+    <!-- JS -->
+    <script src="https://2019.igem.org/Team:Calgary/jquery_3_3_1_min_jsImposter?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:Calgary/jquery_fullPage_jsImposter?action=raw&ctype=text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                loopBottom: true,
+                loopTop: true,
+                responsiveWidth: 750,
+                responsiveHeight: 400,
+                afterResponsive: function (isResponsive) { }
+            });
+        });
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
 }
-p {
-    width:70%;
-    color:#FFFFFF;
-    font-size: 10.5pt;
-    padding-left:10px;
-    padding-top:10px;
-}
-img {
-    width:36px;
-    height:36px;
-}
-ul.social_icons, li.social {
-    margin-top:-23px;
-    padding-left:5px;
-    padding-right:5px;
-    max-width:25%;
-    list-style: none;
-    float:right;
-    text-decoration:none;
-    display:inline-block;
-    position: relative;
-}
-</style>
+
+    </script>
+    <script src="https://2019.igem.org/Team:Calgary/bootstrap_min_jsImposter?action=raw&ctype=text/javascript"></script>
 </head>
 <body>
-<footer>
-    <ul class="social_icons">
-        <li class="social">
-            <a href="http://www.linkedin.com" target="_blank">
-            <img src="http://in-touchcoaching.com/img/linkedin.png"/></a></li>
-        <li class="social"> <a href="http://googleplus.com " target="_blank ">
-     <img src="http://img2.wikia.nocookie.net/__cb20130505145739/2brokegirls/images/7/7e/Google-plus-3-512.png "/></a>
-        </li>
-        <li class="social"> <a href="http://www.facebook.com " target="_blank ">
-     <img src="http://cdn.redmondpie.com/wp-content/uploads/2011/08/Facebook.png "/></a>
-        </li>
-        <li class="social"> <a href="http://www.twitter.com " target="_blank "><img src="https://g.twimg.com/Twitter_logo_blue.png "/></a>
-        </li>
-    </ul>
-</footer>
+    <footer>
+        <hr />
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h5>
+                    About us
+                </h5>
+                <p>
+                    The Calgary iGEM team is committed to creating a viable solution to an industry
+                    that makes farmers lose substantial amount of money due to weather with synthetic biology.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h5>
+                    Contact us
+                </h5>
+                <p>
+                    (Social media links)
+                    Address: 3330 Hospital Drive NW
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h5>
+                    Sponsors
+                </h5>
+            </div>
+        </div>
+        <p>
+            Written by JD, 2019-05-16;
+            Last updated by: JD, 2019-05-16
+        </p>
+    </footer>
 </body>
 </html>
