@@ -3,18 +3,19 @@
     <meta charset="UTF-8">
     <!-- CSS -->
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/WikiResetCSSImposter?action=raw&ctype=text/css">
-    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/bootstrap_min_css?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
-    <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/jquery_fullPage_css?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="stylesheets/jquery.fullPage.css">
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/animation_css?action=raw&ctype=text/css">
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/layout_cssImposter?action=raw&ctype=text/css">
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/animation_css?action=raw&ctype=text/css">
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/ProjectCSS_cssImposter?action=raw&ctype=text/css">
-    <link rel="stylesheet" href="loadingScreen.css">
-
+    <link rel="stylesheet" href="stylesheets/loadingScreen.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/icon.hover.css">
     <!-- JS -->
     <script src="https://2019.igem.org/Team:Calgary/jquery_3_3_1_min_jsImposter?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Team:Calgary/jquery_fullPage_jsImposter?action=raw&ctype=text/javascript"></script>
+    <script src="scripts/jquery.fullPage.js"></script>
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
@@ -27,24 +28,18 @@
         });
     window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("topBtn").style.display = "block";
-    } else {
-        document.getElementById("topBtn").style.display = "none";
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
     }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
 
     </script>
     <script src="https://2019.igem.org/Team:Calgary/bootstrap_min_jsImposter?action=raw&ctype=text/javascript"></script>
 </head>
-<body onload="myFunction()">
+<body onload="showPage()">
     <div id="loadingScreen">
         <div class="lds-circle">
             <div>
@@ -77,13 +72,69 @@ function topFunction() {
                         Contact us
                     </h5>
                     <hr />
-                    <a href="#"> <img src="https://2019.igem.org/wiki/images/d/d5/T--Calgary--FacebookIcon.jpg" alt="Facebook Icon"> </a> @facebook/igemSomething<br />
-                    <a href="#"> </a>  @twitter/igemSomething<br />
-                    <a href="#"> </a>   @insta/igemSomething
-                    <hr />
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <div class="icon__wrap">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                    <p class="img__description"></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p>
+                                @ourEmail
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <div class="icon__wrap">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                    <p class="img__description"></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p>
+                                @ourFinsta
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <div class="icon__wrap">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                    <p class="img__description"></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p>
+                                @ourTwitter
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <div class="icon__wrap">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                    <p class="img__description"></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p>
+                                @ourFacebook
+                            </p>
+                        </div>
+
+                    </div>
                     <p>
-                        Email: @email/igemSomething<br />
-                        Address: 3330 Hospital Drive NW
+                        3330 Hospital Drive NW
                     </p>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
@@ -92,16 +143,10 @@ function topFunction() {
         </footer>
     </div>
     <script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 300);
-}
-
-function showPage() {
-  document.getElementById("loadingScreen").style.display = "none";
-  document.getElementById("footerContent").style.display = "block";
-}
+        function showPage() {
+            document.getElementById("loadingScreen").style.display = "none";
+            document.getElementById("footerContent").style.display = "block";
+        }
     </script>
 </body>
 </html>
