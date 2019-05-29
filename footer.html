@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/layout_cssImposter?action=raw&ctype=text/css">
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/animation_css?action=raw&ctype=text/css">
     <link rel="stylesheet" href="https://2019.igem.org/Team:Calgary/ProjectCSS_cssImposter?action=raw&ctype=text/css">
+    <link rel="stylesheet" href="loadingScreen.css">
 
     <!-- JS -->
     <script src="https://2019.igem.org/Team:Calgary/jquery_3_3_1_min_jsImposter?action=raw&ctype=text/javascript"></script>
@@ -43,43 +44,64 @@ function topFunction() {
     </script>
     <script src="https://2019.igem.org/Team:Calgary/bootstrap_min_jsImposter?action=raw&ctype=text/javascript"></script>
 </head>
-<body>
-    <footer>
-        <hr />
-        <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <h5>
-                    About us
-                </h5>
-                <p>
-                    The Calgary iGEM team is committed to creating a viable solution to an industry
-                    that makes farmers lose substantial amount of money due to weather with synthetic biology.
-                </p>
+<body onload="myFunction()">
+    <div id="loadingScreen">
+        <div class="lds-circle">
+            <div>
+                <img src="http://2018.igem.org/wiki/images/4/43/T--Calgary--LogoNavOff.png" alt="placeholder logo" class="center">
             </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <h5>
-                    Sponsors
-                </h5>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <h5>
-                    Contact us
-                </h5>
-                <hr />
-                <a href="#"> <img src="https://2019.igem.org/wiki/images/d/d5/T--Calgary--FacebookIcon.jpg" alt="Facebook Icon"> </a> @facebook/igemSomething<br />
-                <a href="#"> </a>  @twitter/igemSomething<br />
-                <a href="#"> </a>   @insta/igemSomething
-                <hr />
-                <p>
-                    Email: @email/igemSomething<br />
-                    Address: 3330 Hospital Drive NW
-                </p>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
         </div>
-        <hr />
-    </footer>
+    </div>
+    <div style="display:none;" id="footerContent">
+        <footer>
+            <hr />
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h5>
+                        About us
+                    </h5>
+                    <p>
+                        The Calgary iGEM team is committed to creating a viable solution to an industry
+                        that makes farmers lose substantial amount of money due to weather with synthetic biology.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h5>
+                        Sponsors
+                    </h5>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h5>
+                        Contact us
+                    </h5>
+                    <hr />
+                    <a href="#"> <img src="https://2019.igem.org/wiki/images/d/d5/T--Calgary--FacebookIcon.jpg" alt="Facebook Icon"> </a> @facebook/igemSomething<br />
+                    <a href="#"> </a>  @twitter/igemSomething<br />
+                    <a href="#"> </a>   @insta/igemSomething
+                    <hr />
+                    <p>
+                        Email: @email/igemSomething<br />
+                        Address: 3330 Hospital Drive NW
+                    </p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            </div>
+            <hr />
+        </footer>
+    </div>
+    <script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 300);
+}
+
+function showPage() {
+  document.getElementById("loadingScreen").style.display = "none";
+  document.getElementById("footerContent").style.display = "block";
+}
+    </script>
 </body>
 </html>

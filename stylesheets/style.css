@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+.igem-title {
+	text-align: center;
+	font-family: 'Rubik';
+	font-size: 80px;
+	color: #0FA3B1;
+	font-weight: bold;
+}
+
+.container-fluid {
+	margin: 2% auto;
+	max-width: 100%;
+}
+
+.article-text {
+	border-buttom: 2px solid rgba(0,0,0,0.5);
+}
+
+p {
+	font-family: 'Rubik', serif;
+	color: #0FA3B1;
+	margin: 1em 3em;
+	text-align: justify;
+}
+
+/*Overidding the navigational bar styles in Bootstrap*/
+.nav-link {
+	color: rgb(35,163,167);
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+ 	border-color: rgba(15,163,177, 0.3) rgba(15,163,177, 0.3) rgba(0,0,0,0);
+ 	border-top-width: 2px;
+ 	border-radius: 0rem;
+ 	color: rgb(65,213,217);
+}
+
+.nav-tabs {
+ 	border-bottom: 2px solid rgba(15,163,177, 0.3);
+ 	margin: 3% auto;
+}
+
+.nav-pills .nav-link.active {
+	background-color: rgb(65,213,217);
+}
+
+.nav-pills .nav-link {
+	margin: 0 20px;
+	transition-property: background;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	font-family: 'Rubik';
+}
+
+.nav-pills .nav-link:hover {
+	background-color: rgb(105,233,217);
+	color: white;
+}
+
+/*Getting the nav bar to stick*/
+.stick {
+
+	position: fixed;
+	top: 0;
+	margin: 0;
+	width: 100%;
+
+	/*Centering the bar (since its fixed)*/
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+
+	padding: 0.5% 0%;
+
+	background-color: rgb(200, 247, 247);
+
+}
+
+.empty-space {
+	height: ;
+}

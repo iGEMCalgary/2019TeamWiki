@@ -1,0 +1,29 @@
+html
+    head
+        titleExampletitle
+        link rel=stylesheet href=style.css
+        style
+            h5 {
+                color darkmagenta
+            }
+            body {
+                background-color aquamarine
+            }
+            style
+    head
+
+    body
+    h1there he ish1
+    h5dat boih5
+    pwith the most beautifulp
+    h1ititaysih1
+    img src=https66.media.tumblr.com66f834f2386c7ee7c03219c09425f4aftumblr_pnsvt4GuFY1xqb73do1_250.jpg
+        style=height 100%; width 100%
+    a href=http2018.igem.orgTeamCalgary target=blanksnap equap flap herea
+    ol
+        liprotocol stepsli
+        limore protocol stepsli
+        lilike thisli
+        liwowli
+    ol
+    h1 class=medium id=small a thing hereh1
