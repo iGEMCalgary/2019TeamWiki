@@ -1,0 +1,504 @@
+﻿<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iGEM Calgary - Mean Green Machine</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <link href="animate_on_scroll.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="sidenav.css" />
+    <script type="text/javascript" src="sidenav.js"></script>
+    <script type="text/javascript" src="Dictionary.js"></script>
+    <link rel="stylesheet" type="text/css" href="content_page.css" />
+    <script type="text/javascript" src="page_load.js"></script>
+    <link rel="stylesheet" type="text/css" href="navbar_loading_icon.css" />
+    <style>
+
+        /* Content Page specific Styling */
+        .title-segment {
+            background-color: #2ADD3C;
+            height: 100vh;
+            width: 100%;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+
+        .title {
+            position: absolute;
+            width: 45vw;
+            left: 5%;
+            display: inline;
+            top: 20%;
+        }
+
+        .title-segment h1 {
+            color: white;
+            font-size: 8.5vw;
+            position: relative;
+            left: 0px;
+            overflow: visible;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-family: 'Header', sans-serif !important;
+            font-weight: 600 !important;
+            letter-spacing: 0px;
+            line-height: 9vw;
+            white-space: normal;
+            display: inline;
+            text-decoration: none;
+        }
+
+        .title-segment h2 {
+            color: white;
+            font-size: 8.5vw;
+            position: relative;
+            left: 0px;
+            overflow: visible;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-family: 'Header', sans-serif !important;
+            font-weight: 600 !important;
+            letter-spacing: 0px;
+            line-height: 9vw;
+            white-space: normal;
+            display: inline;
+            text-decoration: none;
+        }
+
+        .title-segment h3 {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 2rem;
+            position: relative;
+            left: 0rem;
+            overflow: visible;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-family: 'Header', sans-serif !important;
+            font-weight: 500 !important;
+            letter-spacing: 0px;
+            line-height: 2.2rem;
+            white-space: pre-wrap;
+            text-decoration: none;
+            text-align: center;
+            left: 0rem;
+            margin-top: 1.2rem;
+        }
+
+        #title-image {
+            position: absolute;
+            right: 3rem;
+            max-width: 45vw;
+            max-height: 80vh;
+            bottom: 2rem;
+            z-index: 100;
+            display: inline;
+        }
+
+        @media (max-width: 90rem), (max-height: 40rem) {
+
+            .title-segment h1,
+            .title-segment h2 {
+                font-size: 8.5vw;
+                line-height: 9vw;
+            }
+
+            .title-segment h3 {
+                font-size: 1.5rem;
+                text-align: left;
+                left: 0rem;
+            }
+        }
+
+        @media (max-width: 60rem), (max-height: 44rem) {
+
+            .title {
+                width: 80vw;
+            }
+
+            #title-image {
+                width: 20rem;
+                left: calc(50vw - 10rem);
+                bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 47rem) {
+
+            .title {
+                width: 80vw;
+            }
+
+            #title-image {
+                width: 12rem;
+                left: calc(50vw - 7.5rem);
+                bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 0rem), (max-height: 42rem) {
+
+            .title {
+                width: 80vw;
+            }
+
+            #title-image {
+                display: none;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="navbar.js"></script>
+</head>
+
+
+<body>
+
+    <div id="cover">
+
+        <div class="circle"></div>
+        <div class="circle-small"></div>
+        <div class="circle-big"></div>
+        <div class="circle-inner-inner"></div>
+        <div class="circle-inner"></div>
+
+    </div>
+
+    <div id="panel1"></div>
+    <div id="panel2"></div>
+
+    <img src="New-Text-Document.svg" id="yOIL-logo">
+
+    <img id="menu" src="chlorophyll.png">
+
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="http://2019.igem.org/Team:Calgary">
+                    <img src="https://2019.igem.org/wiki/images/6/6f/T--Nottingham--home.png">
+                    <div>Home</div>
+                </a>
+            <li class="drop">
+                <a href="#">
+                    <img src="https://2019.igem.org/wiki/images/9/9d/T--Nottingham--team.png">
+                    <div>Team</div>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="http://2019.igem.org/Team:Calgary/Team">Meet the Team</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Collaborations">Collaborations</a></li>
+                </ul>
+            </li>
+            <li class="drop">
+                <a href="#">
+                    <img src="https://2019.igem.org/wiki/images/2/2b/T--Nottingham--project.png">
+                    <div>Project</div>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="http://2019.igem.org/Team:Calgary/Description">Description</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Design">Design</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Experiments">Experiments</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Notebook">Notebook</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Contribution">Contribution</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Results">Results</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Demonstrate">Demonstrate</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Improve">Improve</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Attributions">Attributions</a></li>
+                </ul>
+            </li>
+            <li class="drop">
+                <a href="#">
+                    <img src="https://2019.igem.org/wiki/images/b/be/T--Nottingham--parts.png">
+                    <div>Parts</div>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="http://2019.igem.org/Team:Calgary/Parts">Parts Overview</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Basic_Part">Basic Parts</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Composite_Part">Composite Parts</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Part_Collection">Part Collection</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://2019.igem.org/Team:Calgary/Safety">
+                    <img src="https://2019.igem.org/wiki/images/4/41/T--Nottingham--safety.png">
+                    <div>Safety</div>
+                </a>
+            <li class="drop">
+                <a href="#">
+                    <img src="https://2019.igem.org/wiki/images/1/17/T--Nottingham--human.png">
+                    <div>Human Practices</div>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="http://2019.igem.org/Team:Calgary/Human_Practices">Human Practices</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Public_Engagement">Public Engagement</a></li>
+                </ul>
+            </li>
+            <li class="drop">
+                <a href="#">
+                    <img src="https://2019.igem.org/wiki/images/7/7f/T--Nottingham--awards.png">
+                    <div>Awards</div>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="http://2019.igem.org/Team:Calgary/Entrepreneurship">Entrepreneurship</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Hardware">Hardware</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Measurement">Measurement</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Model">Model</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Plant">Plant</a></li>
+                    <li><a href="http://2019.igem.org/Team:Calgary/Software">Software</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://igem.org/2019_Judging_Form?team=Nottingham">
+                    <img src="https://2019.igem.org/wiki/images/9/9d/T--Nottingham--judging.png">
+                    <div>Judging Form</div>
+                </a>
+        </ul>
+    </nav>
+
+
+    <div id="mini-nav-overlay">
+
+        <img id="back" src="https://2019.igem.org/wiki/images/9/90/T--Nottingham--back-arrow.png">
+
+        <div id="mini-nav">
+
+            <a href="http://2019.igem.org/Team:Nottingham"><img src="https://2019.igem.org/wiki/images/6/6f/T--Nottingham--home.png"></a>
+            <img id="team" src="https://2019.igem.org/wiki/images/9/9d/T--Nottingham--team.png">
+            <img id="project" src="https://2019.igem.org/wiki/images/2/2b/T--Nottingham--project.png">
+            <img id="parts" src="https://2019.igem.org/wiki/images/b/be/T--Nottingham--parts.png">
+            <a href="http://2019.igem.org/Team:Nottingham/Safety"><img src="https://2019.igem.org/wiki/images/4/41/T--Nottingham--safety.png"></a>
+            <img id="human" src="https://2019.igem.org/wiki/images/1/17/T--Nottingham--human.png">
+            <img id="awards" src="https://2019.igem.org/wiki/images/7/7f/T--Nottingham--awards.png">
+            <a href="http://igem.org/2019_Judging_Form?team=Nottingham"><img src="https://2019.igem.org/wiki/images/9/9d/T--Nottingham--judging.png"></a>
+        </div>
+
+        <img id="cancel" src="https://2019.igem.org/wiki/images/a/a4/T--Nottingham--cancel.png">
+
+        <div class="expand" id="team2">
+            <img src="https://2019.igem.org/wiki/images/9/9d/T--Nottingham--team.png">
+            <h1>Team</h1>
+            <hr>
+            <a href="http://2019.igem.org/Team:Nottingham/Team">Meet the Team</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Collaborations">Collaborations</a>
+        </div>
+
+        <div class="expand" id="project2">
+            <img src="https://2019.igem.org/wiki/images/2/2b/T--Nottingham--project.png">
+            <h1>Project</h1>
+            <hr>
+            <a href="http://2019.igem.org/Team:Nottingham/Description">Description</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Design">Design</a>
+            <a href="http//2019.igem.org/Team:Nottingham/Experiments">Experiments</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Notebook">Notebook</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Contribution">Contribution</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Results">Results</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Demonstrate">Demonstrate</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Improve">Improve</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Attributions">Attributions</a>
+        </div>
+
+        <div class="expand" id="parts2">
+            <img src="https://2019.igem.org/wiki/images/b/be/T--Nottingham--parts.png">
+            <h1>Parts</h1>
+            <hr>
+            <a href="http://2019.igem.org/Team:Nottingham/Parts">Parts Overview</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Basic_Part">Basic Parts</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Composite_Part">Composite Parts</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Part_Collection">Part Collection</a>
+        </div>
+
+        <div class="expand" id="human2">
+            <img src="https://2019.igem.org/wiki/images/1/17/T--Nottingham--human.png">
+            <h1 style="font-size: 2.2rem; margin-top: -7px;">Human<br>Practices</h1>
+            <hr>
+            <a href="http://2019.igem.org/Team:Nottingham/Human_Practices">Human Practices</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Public_Engagement">Public Engagement</a>
+        </div>
+
+        <div class="expand" id="awards2">
+            <img src="https://2019.igem.org/wiki/images/7/7f/T--Nottingham--awards.png">
+            <h1>Awards</h1>
+            <hr>
+            <a href="http://2019.igem.org/Team:Nottingham/Entrepreneurship">Entrepreneurship</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Hardware">Hardware</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Measurement">Measurement</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Model">Model</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Plant">Plant</a>
+            <a href="http://2019.igem.org/Team:Nottingham/Software">Software</a>
+        </div>
+
+    </div>
+    <!-- Local use only -->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(document).ready(function() {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+    </script>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+        <div id="bot-nav"></div>
+    </div>
+    <a name="linktotop"></a>
+    <div class="title-segment">
+        <div class="title" data-aos="fade-right" data-aos-duration="2000">
+            <h1>Standardized</h1>
+            <h2>Measurements</h2>
+            <br>
+            <br>
+            <h3><em style="color: green">Green</em> is the difference between <em style="color: green">profit</em> and <em style="color: red">loss</em></h3>
+            <h3><em>- Craig Shand</em></h3>
+        </div>
+        <img id="title-image" src="https://2019.igem.org/wiki/images/9/90/T--Calgary--header-background.jpg">
+
+        <div style="width: 100%; height: 150px; bottom: 0px; background-color: #000000; opacity: 0.05; position: absolute; z-index: 50; "></div>
+    </div>
+
+
+    <div id="main-body">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0" id="sidenav">
+                <ul>
+                    <li><a href="#why">Why Standardize?</a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" id="page-content">
+                <div class="text-segment-container">
+                    <div class="text-segment" data-aos="fade-up">
+                        <a name="why"></a>
+                        <h1 style="font-family: 'Header', sans-serif; font-weight: 600;">Why Seed Grading?</h1>
+                        <p>
+                            In one of our first talks with canola farmers, namely craig,
+                            it was identified that we had to do something about canola grading.
+                            We heard stories about farmers bringing their seeds into 2 different grain elevators
+                            (where they grade the seeds then bring the seeds to the crushers),
+                            and got two different grades for his seeds from the same sample.
+                            This has an enormous impact on farmers because selling <var>grade 1 seeds</var> gives a
+                            farmer their investment back. But being a Canola grower and selling <var>grade 2 seeds</var>
+                            will give him around half the money. <var>Grade 2 seeds</var> and lower can only really be
+                            used to produce meal due to their chlorophyll content. A farmer that produces anything
+                            but grade 1 seeds will lose a lot of money.
+                        </p>
+                        <br /><br />
+                        <p>
+                            Seeds are sampled randomly, but are graded by the human eye.
+                            The human eye is a marvel, but detecting exact colours of all seeds perfectly,
+                            is difficult. To help farmers, and all those affected by poor grading practices,
+                            we built a tool that standardizes the grading of the seeds. This way, farmers and
+                            grain elevators will get the exact same grade every single time. We will try to first
+                            implement our method in Farmer Store Things, to get farmers used to it and iterate our
+                            project for usability. Another advantage of starting in the farmer store things, is
+                            that we can continuously update our project by reaching a large user base and buying
+                            the time to have a finalized product that runs fast and lasts a long time.
+                        </p>
+                    </div>
+                    <a name="approach"></a>
+                    <div class="more-box" data-aos="flip-left">
+                        <div class="more-box-inner-noimg">
+                            <h1>Our Approach</h1>
+                            <ul style="">
+                                <li>What has been done?</li>
+                                <li>How do we standardize the conditions?</li>
+                                <li>How do we detect the seeds and their colour?</li>
+                                <li>How do we deploy our project to be used?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-segment" data-aos="fade-up">
+                        <h1 style="font-family: 'Header', sans-serif; font-weight: 600;">What has been done?</h1>
+                        <p>
+                            To understand what has been done, we talked to the <var>Canada Grains Commission</var> and their chief scientists/graders.
+                            We learned that there has been attempts to create a tool to measure chlorophyll quickly.
+                            They created a tool that costed around 22000$ and took over 2 minutes to run.
+                            We learned that to have a successful product, we needed it to be faster.
+                            The cost was less of a concern than the speed of operation.
+                            The method was to grind the seeds then run it through a <var>NIR spectrometer</var>.
+                            This method homogenizes the seeds then measures the amount of green in this mixture,
+                            which is extremely precise. But due to the need of grinding the seeds,
+                            it becomes much slower.
+                            Our project will use simple cameras which makes the green readings less quantitative
+                            and more qualitative, further iterations may use a machine vision camera which can be
+                            customized to work excessively well in the environment we give it.
+                            Due to DGR classification being a qualitative problem, this makes our approach much stronger.
+                        </p>
+                        <br /><br />
+                        <p>
+                        </p>
+                    </div>
+                    <a name="results"></a>
+                </div>
+                <div class="text-segment" data-aos="fade-up">
+                    <a name="references"></a>
+                    <h1 style="font-family: 'Header', sans-serif; font-weight: 600;">References</h1>
+                    <table style="width:100%">
+                        <tr>
+                            <th>1</th>
+                            <td>Thick IEEE References</td>
+                        </tr>
+                    </table>
+                </div>
+            
+                <div class="more-box-container">
+                    <div class="more-box" data-aos="flip-left">
+
+                        <img src="https://2019.igem.org/wiki/images/9/90/T--Calgary--header-background.jpg">
+                        <div class="more-box-inner">
+                            <h1> Panel box with img</h1>
+                        </div>
+                        <div class="learn-more">
+                            <h1>Learn More</h1>
+                        </div>
+                    </div>
+
+                    <div class="more-box" data-aos="flip-left" data-aos-offset="200">
+
+                        <div class="more-box-inner-noimg">
+                            <h1>Panel Box</h1>
+                        </div>
+                        <a href="https://igemcalgary.ca/index.html" target="_blank">
+                            <div class="visit-ext-site">
+                                <h1>Visit External Site</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0" id="definitions">
+                <div id="mind-map-container">
+                    <!-- mind-map -->
+                    <div id="mind-map">
+                        <img src="https://2019.igem.org/wiki/images/9/90/T--Calgary--header-background.jpg" style="width: 100%;" data-aos="fade-up">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    
+
+
+
+    <script src="animate_on_scroll.js"></script>
+    <script>
+        $(window).on('load', function() {
+            AOS.init({
+                duration: 600,
+                mirror: true
+            });
+        });
+
+    </script>
+</body>
+
+</html>

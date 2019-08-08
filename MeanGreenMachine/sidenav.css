@@ -1,0 +1,36 @@
+﻿/* The side navigation menu */
+#sidenav {
+    width: 100%;
+    position: sticky;
+    z-index: 1; /* Stay on top */
+    background-color: #27C937;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+}
+    #sidenav ul {
+        list-style-type: none;
+        right: 1vw;
+    }
+    /* The navigation menu links */
+    #sidenav a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        #sidenav a:hover {
+            color: black;
+        }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
